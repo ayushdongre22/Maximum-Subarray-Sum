@@ -8,7 +8,7 @@ long long maxSubarraySum(int arr[], int n)
         for(int j=i;j<n;j++){
             int sum=0;
             int k=i;
-            while(k<=j){sum=sum+arr[k];}
+            while(k<=j){sum=sum+arr[k]; k++;}
             maxa=max(maxa,sum);
         }
     }
